@@ -72,5 +72,14 @@ namespace SimpleCalculator
             ans = num1 - num2;
             textBox3.Text = ans.ToString();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            float num1, num2, ans;
+            num1 = float.Parse(textBox1.Text);
+            num2 = float.Parse(textBox2.Text);
+            ans = num1 % num2;
+            textBox3.Text = ans.ToString();
+        }
     }
 }

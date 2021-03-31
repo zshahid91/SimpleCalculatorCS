@@ -39,6 +39,7 @@ namespace SimpleCalculator
             this.DivButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.RemButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -136,11 +137,23 @@ namespace SimpleCalculator
             this.textBox3.TabIndex = 8;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
+            // RemButton
+            // 
+            this.RemButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RemButton.Location = new System.Drawing.Point(269, 145);
+            this.RemButton.Name = "RemButton";
+            this.RemButton.Size = new System.Drawing.Size(75, 56);
+            this.RemButton.TabIndex = 10;
+            this.RemButton.Text = "%";
+            this.RemButton.UseVisualStyleBackColor = true;
+            this.RemButton.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(400, 300);
+            this.Controls.Add(this.RemButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.DivButton);
@@ -171,6 +184,7 @@ namespace SimpleCalculator
         private System.Windows.Forms.Button DivButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button RemButton;
     }
 }
 
